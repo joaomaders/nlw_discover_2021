@@ -1,3 +1,4 @@
+/* ------------ reset ------------*/
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* ------------ variáveis ------------*/
 html {
     --black: #0D114F;
     --white: #FAFAFA;
@@ -23,17 +25,15 @@ html {
     font-size: 62.5%; /* 10px */
 } 
 
+/* ------------ body and content ------------*/
 body {
     height: 100vh;
     background-color: var(--background);
 }
 
 body, button, input, textarea {
-    /* intervalo de tamanho (min, normal,max)*/
-    font-size: clamp(14px, 1.6rem, 2vw);
-
+    font-size: clamp(14px, 1.6rem, 2vw); /* alterna entre tamanhos (min, normal, max) */
     font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 .content {
@@ -41,6 +41,7 @@ body, button, input, textarea {
     margin: 0px auto;
 }
 
+/* ------------ Screen Reader only ------------*/
 .sr-only {
     position: absolute;
     height: 1px;
@@ -51,4 +52,53 @@ body, button, input, textarea {
     clip-path: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+/* ------------ input and buttons ------------*/
+input, button, .button {
+    border-radius: .8rem;
+    height: 5rem;
+}
+
+button, .button {
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+    color: var(--white);
+}
+
+button.outlined,
+.button.outlined {
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+button:hover, 
+.button:hover {
+    filter: brightness(1.2);
+    transition: filter .2s;
+}
+
+button > img, 
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+/* ------------ header ------------*/
+.content header {
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img {
+    width: 16.7rem;
 }
