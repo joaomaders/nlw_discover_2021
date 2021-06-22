@@ -29,6 +29,8 @@ html {
 body {
     height: 100vh;
     background-color: var(--background);
+    display: flex;
+    align-items: center;
 }
 
 body, button, input, textarea {
@@ -37,6 +39,7 @@ body, button, input, textarea {
 }
 
 .content {
+    height: 100%;
     width: 100%;
     margin: 0px auto;
 }
@@ -62,7 +65,7 @@ input, button, .button {
 
 button, .button {
     cursor: pointer;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     line-height: 0;
     

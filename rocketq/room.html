@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Rocket.Q - Perguntas e Respostas </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- View Port -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/room.css">
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="room" class="content">
+            <header>
+                <a href="#">
+                    <img src="./assets/logo.svg" alt="Logo Rocket.Q"/>
+                </a>
+
+                <div class="buttons">
+                    <div class="button outlined">
+                        #323243
+                        <img src="./assets/copy.svg" alt="Copiar numero da sala">
+                    </div>
+
+                    <a href="#" class="button">
+                        <img src="./assets/users-white.svg" alt="Criar uma sala">
+                        Criar sala
+                    </a>
+                </div>
+            </header>
+
+            <main>
+                <section id="question-form">
+                    <h2>Faca sua pergunta</h2>
+
+                    <form action="">
+                        <label for-id="question" class="sr-only"> O que voce quer perguntar? </label>
+                        <textarea name="question" id="question" placeholder="O que voce quer perguntar?"></textarea>
+
+                        <footer>
+                            <div>
+                                <img src="./assets/lock.svg" alt="Esta pergunta e anonima"/>
+                                Esta pergunta e anonima
+                            </div>
+                            <button> Enviar </button>
+                        </footer>
+                    </form>
+                </section>
+
+                <section id="questions">
+                    <h2 class="sr-only"> Perguntas da comunidade </h2>
+                    <div class="question-wrapper">
+
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="./assets/user.svg" alt="">
+                            </div>
+
+                            <div class="question">
+                                <p> Qual a diferenca entre const, var e let no Javascript? </p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <a href="" class="check">
+                                <img src="./assets/check.svg" alt="Marcar pergunta como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="" class="trash">
+                                <img src="./assets/trash.svg" alt="Excluir pergunta">
+                                Excluir
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
