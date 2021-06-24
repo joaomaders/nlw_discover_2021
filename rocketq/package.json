@@ -1,13 +1,13 @@
 {
-  "name": "rocketq",
+  "name": "rocketQ",
   "version": "1.0.0",
-  "description": "Show",
+  "description": "",
   "main": "src/server.js",
   "scripts": {
     "start": "nodemon ."
   },
   "keywords": [],
-  "author": "Joao Mathias Maders",
+  "author": "João Mathias Maders",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
